@@ -1,0 +1,37 @@
+{
+  "name": "jsdoc-plugin-just-comments",
+  "version": "0.1.0",
+  "description": "Make JSDoc ignore all code and rely solely on comments",
+  "main": "index.js",
+  "homepage": "https://github.com/mrfigg/jsdoc-plugin-just-comments#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrfigg/jsdoc-plugin-just-comments.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrfigg/jsdoc-plugin-just-comments/issues"
+  },
+  "keywords": [
+    "jsdoc",
+    "plugin",
+    "comment",
+    "comments",
+    "typescript"
+  ],
+  "author": "MrFigg",
+  "license": "MIT",
+  "dependencies": {
+    "extract-comments": "^1.1.0"
+  },
+  "peerDependencies": {
+    "jsdoc": "^4.0.2 || ^3.6.11"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "2.8.7"
+  }
+}
