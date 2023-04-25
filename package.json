@@ -1,6 +1,6 @@
 {
   "name": "jsdoc-plugin-just-comments",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Make JSDoc ignore all code and rely solely on comments",
   "main": "index.js",
   "homepage": "https://github.com/mrfigg/jsdoc-plugin-just-comments#readme",
@@ -16,13 +16,11 @@
     "plugin",
     "comment",
     "comments",
+    "javascript",
     "typescript"
   ],
   "author": "MrFigg",
   "license": "MIT",
-  "dependencies": {
-    "extract-comments": "^1.1.0"
-  },
   "peerDependencies": {
     "jsdoc": "^4.0.2 || ^3.6.11"
   },

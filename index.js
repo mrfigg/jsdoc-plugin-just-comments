@@ -1,10 +1,13 @@
-const extractComments = require('extract-comments')
-
 exports.handlers = {
   beforeParse: (event) => {
-    event.source = extractComments(event.source)
-      .map((comment) => `/*${comment.raw}*/`)
+    event.source = [
+      ...event.source.matchAll(
+        /(\/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+\/)|(\/\/.*)/gi
+      ),
+    ]
+      .map((match) => match[0])
       .join('\n')
+      .replace(/^ *(?=\/)/gm, '')
       .replace(/^ *(?=\*)/gm, ' ')
   },
 }
